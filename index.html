@@ -10,9 +10,9 @@
   </head>
 
 
-  <body>
+  <body style="background-color: #F8F8F2" id="Home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #f0f0e6">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Aidan Rogers</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>aidanrogers02@knights.ucf.edu</p>
+            <p>aidanrogers@ucf.edu</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -84,7 +84,7 @@
     </div>
 
     <!-- To display Resume Modal -->
-    <div class="modal fade modal-xl" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal fade modal-lg" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -105,7 +105,7 @@
 
     <!-- Top section of page -->
     <div class="text-center mb-4 mt-4">
-      <h2 id="Home">Aidan Rogers</h2>
+      <h2>Aidan Rogers</h2>
     </div>
 
     <div class="text-center">
@@ -120,25 +120,33 @@
     </div>
     
 
-    <br/><br/><br/>
+    <br id="About"/><br/><br/>
 
 
     <!-- About section -->
     <div class="text-center mb-3">
-      <h4 id="About"><u>About</u></h4>
+      <h4><u>About</u></h4>
     </div>
 
-    <div>
-      <p class="text-center">
-      My name is Aidan Rogers and I am a 2nd year Information Technology Student at UCF. <br>
-      I have a lot of experience from in class working with both Java and C. <br>
-      Outside of the classroom I often work with Python, Excel, SQL, Django, and CSS/Bootstrap. <br>
-      My goal while in school is to land a data analytics internship to further improve my skills <br>
-      in finding trends within data and gain crucial experience for the workforce. Once I graduate I hope to <br>
-      find a career as a junior data analyst. I am passionate about data analysis but outside of that my other <br>
-      passions include my love for dogs, playing guitar, and spending time with my girlfriend.
-      </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <div class="text-left">
+            <p>My name is Aidan Rogers and I am a 3rd year Information Technology Student at UCF. I found a love for data analysis when I took the Google Data Analytics Certification while I was trying to explore possible career options. I enjoy every aspect of working with data, whether that be cleaning, analyzing, or presenting it. I often utilize my skills in Python, SQL, Excel, and Tableau to support my data analysis process.
+            </p>
+            <p>
+            Currently, I work in a research lab analyzing Social Media data and in the spring I will begin a data analytics internship with the U.S. Department of Agriculture! My goal while in school is to land a data analytics internship to further improve my skills in finding trends within data and gain crucial experience for the workforce. Once I graduate I hope to find a career as a junior data analyst. 
+            </p>
+            <p>
+            I am passionate about data analysis but outside of that, my other passions include my love for dogs, playing guitar, and spending time with my girlfriend.
+              </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <br/>
 
     <!-- Image carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="max-width: 38%; margin: auto;">
@@ -156,7 +164,7 @@
           <img src="../images/guitar2.jpg" class="d-block img-fluid" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="../images/disney2.jpg" class="d-block img-fluid" alt="...">
+          <img src="../images/mandm.jpg" class="d-block img-fluid" alt="...">
         </div>
       </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -170,13 +178,14 @@
     </div>
 
 
-    <br/><br/><br/>
+    <br id="Projects"/><br/><br/>
 
 
     <!-- Projects section -->
     <div class="text-center">
-      <h4 id="Projects"><u>Projects</u></h4>
+      <h4><u>Projects</u></h4>
     </div>
+
 
     <!-- Overall Card Group -->
     <div class="row row-cols-1 row-cols-md-3 g-4 m-5">
@@ -189,9 +198,10 @@
             <h5 class="card-title">Taylor Swift Spotify Data Analysis</h5>
             <p class="card-text">A project analyzing the Spotify data of Taylor Swift</p>  
           <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo5" aria-expanded="false" aria-controls="collapseExample">Info</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb5" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit5" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo5" aria-expanded="false" aria-controls="collapseExample">
+            Info</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb5" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit5" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
           </div>
         </div>
 
@@ -240,9 +250,9 @@
             <h5 class="card-title">Google Data Analytics Capstone: Cyclistic</h5>
             <p class="card-text">A capstone data analysis project</p>  
           <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo4" aria-expanded="false" aria-controls="collapseExample">Info</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb4" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit4" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo4" aria-expanded="false" aria-controls="collapseExample">Info</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb4" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit4" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
           </div>
         </div>
 
@@ -283,9 +293,9 @@
           <h5 class="card-title">Album Popularity Trends</h5>
           <p class="card-text">Graph the popularity of an artist's albums</p>  
           <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo1" aria-expanded="false" aria-controls="collapseExample">Info</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb1" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit1" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo1" aria-expanded="false" aria-controls="collapseExample">Info</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb1" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit1" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
           </div>
         </div>
 
@@ -322,9 +332,9 @@
           <h5 class="card-title">Card Game Analysis</h5>
           <p class="card-text">Play Go Fish and see stats on the results</p>  
           <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo2" aria-expanded="false" aria-controls="collapseExample">Info</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb2" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit2" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo2" aria-expanded="false" aria-controls="collapseExample">Info</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb2" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit2" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
           </div>
         </div>
 
@@ -361,9 +371,9 @@
             <h5 class="card-title">My Blog</h5>
             <p class="card-text">A long-form blog social media web app</p>  
           <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo3" aria-expanded="false" aria-controls="collapseExample">Info</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb3" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit3" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo3" aria-expanded="false" aria-controls="collapseExample">Info</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb3" aria-expanded="false" aria-controls="collapseExample">Web Link</button>
+            <button class="btn custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit3" aria-expanded="false" aria-controls="collapseExample">GitHub Link</button>
           </div>
         </div>
 
@@ -398,11 +408,11 @@
 
     </div>
 
-    <br/><br/>
+    <br id="Certifications"/><br/>
 
 <!-- Certifications section -->
     <div class="text-center">
-      <h4 id="Certifications"><u>Certifications</u></h4>
+      <h4><u>Certifications</u></h4>
     </div>
 
 <!-- Overall Card Group -->
@@ -453,3 +463,34 @@
   </body>
 
 </html>
+
+
+<!-- Styles -->
+
+<style>
+  /* Default button styles */
+  .custom-button {
+    background-color: #FFFFFF; /* Default background color */
+    color: #747DE0; /* Default text color */
+    border-color: #747DE0; /* Default border color */
+  }
+
+  /* Button hover effect */
+  .custom-button:hover {
+    background-color: #747DE0; /* New background color on hover */
+    color: #FFFFFF; /* Text color on hover (you can change this too) */
+    border-color: #747DE0; /* Border color on hover (optional) */
+  }
+   /* Button click (active) effect */
+  .custom-button:active {
+    background-color: #747DE0; /* New background color when clicked */
+    color: #FFFFFF; /* Text color when clicked */
+    border-color: #747DE0; /* Border color when clicked (optional) */
+  }
+  .custom-button:focus {
+    background-color: #747DE0; /* New background color when clicked */
+    color: #FFFFFF; /* Text color when clicked */
+    border-color: #747DE0; /* Border color when clicked (optional) */
+    box-shadow: 0 0 8px #565EAF;
+  }
+</style>
